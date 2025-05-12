@@ -17,13 +17,13 @@ public class Main {
 
         SemiTruck hauler = new SemiTruck("Default", 0, 0, 0);
         hauler.setColor("Black");
-        hauler.setCargoCapacity(20000);
-        hauler.setFuelCapacity(30);
+        hauler.setCargoCapacity(10000);
+        hauler.setFuelCapacity(50);
 
         Hovercraft zoomZoom = new Hovercraft("Default", 0, 0, 0);
         zoomZoom.setColor("Matt Green");
-        zoomZoom.setFuelCapacity(10);
-        zoomZoom.setNumberOfPassengers(1);
+        zoomZoom.setFuelCapacity(15);
+        zoomZoom.setNumberOfPassengers(3);
 
         //  Print results
         System.out.println("Moped color: " + slowRide.getColor());
