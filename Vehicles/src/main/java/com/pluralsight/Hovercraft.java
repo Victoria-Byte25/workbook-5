@@ -1,6 +1,9 @@
 package com.pluralsight;
 
 public class Hovercraft extends Vehicle {
-    // Flying baby boat — still a Vehicle under the hood
+    public Hovercraft(String color, int passengers, int cargo, int fuel) {
+        super(color, passengers, cargo, fuel);
+    }
 }
+
 

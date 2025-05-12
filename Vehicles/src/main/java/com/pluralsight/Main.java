@@ -2,28 +2,48 @@ package com.pluralsight;
 
 public class Main {
     public static void main(String[] args) {
-        Moped slowRide = new Moped();
-        slowRide.setColor("Matt Black");
-        slowRide.setFuelCapacity(7);
+        System.out.println("==== PART 1: Using Setters ====");
 
-        Car myCar = new Car();
-        myCar.setColor("Blue");
-        myCar.setFuelCapacity(10);
-        myCar.setNumberOfPassengers(2);
 
-        SemiTruck hauler = new SemiTruck();
-        hauler.setCargoCapacity(10000);
+        Moped slowRide = new Moped("Default", 0, 0, 0);
+        slowRide.setColor("Red");
+        slowRide.setFuelCapacity(5);
+        slowRide.setNumberOfPassengers(1);
+
+        Car weekendCruiser = new Car("Default", 0, 0, 0);
+        weekendCruiser.setColor("Red");
+        weekendCruiser.setFuelCapacity(12);
+        weekendCruiser.setNumberOfPassengers(4);
+
+        SemiTruck hauler = new SemiTruck("Default", 0, 0, 0);
         hauler.setColor("Black");
+        hauler.setCargoCapacity(20000);
+        hauler.setFuelCapacity(30);
 
-        Hovercraft zoomer = new Hovercraft();
-        zoomer.setColor("Silver");
-        zoomer.setFuelCapacity(10);
+        Hovercraft zoomZoom = new Hovercraft("Default", 0, 0, 0);
+        zoomZoom.setColor("Matt Green");
+        zoomZoom.setFuelCapacity(10);
+        zoomZoom.setNumberOfPassengers(1);
 
-        // Print values to test
+        //  Print results
         System.out.println("Moped color: " + slowRide.getColor());
-        System.out.println("Car passengers: " + myCar.getNumberOfPassengers());
-        System.out.println("Truck cargo: " + hauler.getCargoCapacity());
-        System.out.println("Hovercraft fuel: " + zoomer.getFuelCapacity());
+        System.out.println("Car passengers: " + weekendCruiser.getNumberOfPassengers());
+        System.out.println("Truck cargo capacity: " + hauler.getCargoCapacity());
+        System.out.println("Hovercraft fuel: " + zoomZoom.getFuelCapacity());
+
+        System.out.println("\n==== PART 2: Using Constructors ====");
+
+        //  Using constructors to set values right away
+        Moped newRide = new Moped("Green", 1, 0, 6);
+        Car roadTrip = new Car("Black", 5, 3, 15);
+        SemiTruck beastTruck = new SemiTruck("Eggshell", 2, 25000, 40);
+        Hovercraft spaceZoom = new Hovercraft("Pink", 2, 2, 20);
+
+        // 🧾 Print constructor-based objects
+        System.out.println("Moped color: " + newRide.getColor());
+        System.out.println("Car passengers: " + roadTrip.getNumberOfPassengers());
+        System.out.println("Truck cargo capacity: " + beastTruck.getCargoCapacity());
+        System.out.println("Hovercraft fuel: " + spaceZoom.getFuelCapacity());
     }
 }
 

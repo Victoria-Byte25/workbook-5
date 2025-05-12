@@ -1,5 +1,8 @@
 package com.pluralsight;
 
 public class SemiTruck extends Vehicle {
-    // Truck needs all that cargo space — no extra stuff yet
+    public SemiTruck(String color, int passengers, int cargo, int fuel) {
+        super(color, passengers, cargo, fuel);
+    }
 }
+
