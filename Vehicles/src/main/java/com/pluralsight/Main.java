@@ -33,13 +33,11 @@ public class Main {
 
         System.out.println("\n==== PART 2: Using Constructors ====");
 
-        //  Using constructors to set values right away
         Moped newRide = new Moped("Green", 1, 0, 6);
         Car roadTrip = new Car("Black", 5, 3, 15);
         SemiTruck beastTruck = new SemiTruck("Eggshell", 2, 25000, 40);
         Hovercraft spaceZoom = new Hovercraft("Pink", 2, 2, 20);
 
-        // 🧾 Print constructor-based objects
         System.out.println("Moped color: " + newRide.getColor());
         System.out.println("Car passengers: " + roadTrip.getNumberOfPassengers());
         System.out.println("Truck cargo capacity: " + beastTruck.getCargoCapacity());

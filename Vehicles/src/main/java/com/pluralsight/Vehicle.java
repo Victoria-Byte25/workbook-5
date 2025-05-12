@@ -13,7 +13,6 @@ public class Vehicle {
         this.fuelCapacity = fuelCapacity;
     }
 
-    // ✅ Getters
     public String getColor() {
         return color;
     }
