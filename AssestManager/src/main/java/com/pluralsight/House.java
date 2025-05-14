@@ -1,14 +1,12 @@
 package com.pluralsight;
 
-import java.text.NumberFormat;
-
-public class Building extends Asset {
+public class House extends Asset {
     private String address;
-    private int condition;  // 1=Excellent, 2=Good, 3=Fair, 4=Poor
+    private int condition;
     private int squareFoot;
     private int lotSize;
 
-    public Building(String description, String dateAcquired, double originalCost,
+    public House(String description, String dateAcquired, double originalCost,
                  String address, int condition, int squareFoot, int lotSize) {
         super(description, dateAcquired, originalCost);
         this.address = address;
